@@ -39,4 +39,4 @@ npm i -g npm
 corepack enable pnpm
 
 # Post-Install
-sudo reboot
+exec $SHELL
