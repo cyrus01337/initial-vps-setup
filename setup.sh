@@ -13,7 +13,7 @@ fi
 /bin/bash -c "$(curl -sL https://git.io/vokNn)"
 
 # Dependencies
-sudo apt-fast install -y build-essential gdb lcov libbz2-dev libffi-dev libgdbm-compat-dev libgdbm-dev liblzma-dev libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev lzma lzma-dev pkg-config tk-dev uuid-dev zlib1g-dev zsh
+sudo apt-fast install -y build-essential fonts-powerline gdb lcov libbz2-dev libffi-dev libgdbm-compat-dev libgdbm-dev liblzma-dev libncurses5-dev libreadline6-dev libsqlite3-dev libssl-dev lzma lzma-dev pkg-config tk-dev uuid-dev zlib1g-dev zsh
 sudo apt-fast build-dep -y python3
 
 # Pre-Install System Update
@@ -28,12 +28,12 @@ curl https://gist.githubusercontent.com/cyrus01337/ed66e661a3dfe91f07d21d70dc14e
 
 # Pyenv
 curl https://pyenv.run | bash
-exec $SHELL
+. $ZSHRC
 pyenv install 3.11
 
 # NVM
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash
-exec $SHELL
+. $ZSHRC
 nvm install 18
 npm i -g npm
 corepack enable pnpm
