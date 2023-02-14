@@ -5,7 +5,7 @@ sudo apt-get update
 sudo apt-get install -y git
 
 # Grab cURL if it's not installed because that's all I know how to use at the moment
-if [[ ! command -v curl ]]; then
+if ! command -v curl > /dev/null; then
     sudo apt-get install -y curl
 fi
 
