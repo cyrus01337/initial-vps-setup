@@ -23,7 +23,7 @@ sudo apt-fast dist-upgrade -y
 # Zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
 sudo chsh -s /bin/zsh $RUNNING_USER
-curl https://gist.githubusercontent.com/cyrus01337/ed66e661a3dfe91f07d21d70dc14ef98/raw/494d97108860f0f49906bfa80affba76c5d537e7/.zshrc > $ZSHRC
+curl https://raw.githubusercontent.com/cyrus01337/initial-vps-setup/main/.zshrc > $ZSHRC
 . $ZSHRC
 
 # Pyenv
