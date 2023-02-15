@@ -3,7 +3,7 @@ RUNNING_USER="$(logname)"
 ZSHRC="/home/$RUNNING_USER/.zshrc"
 
 if ! grep -q "^deb-src http://archive.ubuntu.com/ubuntu/ jammy main" /etc/apt/sources.list; then
-    echo "http://archive.ubuntu.com/ubuntu/ jammy main" >> /etc/apt/sources.list
+    sudo echo "http://archive.ubuntu.com/ubuntu/ jammy main" >> /etc/apt/sources.list
 fi
 
 sudo apt-get update
