@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-ZSHRC="/home/$(logname)/.zshrc"
+RUNNING_USER="$(logname)"
+ZSHRC="/home/$RUNNING_USER/.zshrc"
 
 sudo apt-get update
 
